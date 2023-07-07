@@ -1,0 +1,27 @@
+<div class="col-12">
+    <div class="card">
+        <h5>Users</h5>
+        <p-table [value]="users" scrollDirection="both" [scrollable]="true" scrollHeight="400px" styleClass="mt-3" responsiveLayout="scroll">
+            <ng-template pTemplate="header">
+                <tr>
+                    <th style="width:200px">Id</th>
+                    <th style="width:200px">FullName</th>
+                    <th style="width:200px">Mobile</th>
+                    <th style="width:200px">Email</th>
+                    <th style="width:200px">User Type</th>
+                    <th style="width:200px">Module</th>
+                </tr>
+            </ng-template>
+            <ng-template pTemplate="body" let-user>
+                <tr>
+                    <td style="width:200px">{{user.Id}}</td>
+                    <td style="width:200px">{{user.FullName}}</td>
+                    <td style="width:200px">{{user.Mobile}}</td>
+                    <td style="width:200px">{{user.EmailId}}</td>
+                    <td style="width:200px">{{user.UserType}}</td>
+                    <td style="width:200px">{{user.Module}}</td>
+                </tr>
+            </ng-template>
+        </p-table>
+    </div>
+</div>
